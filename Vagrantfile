@@ -80,6 +80,7 @@ end
   mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';"
   mysql -e "FLUSH PRIVILEGES;"
   mysql -e "CREATE TABLE STRONA"
+  sudo systemctl restart mariadb
   # Konfiguracja firewalld
   sudo systemctl start firewalld
   sudo systemctl enable firewalld
